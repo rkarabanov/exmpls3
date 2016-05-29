@@ -1,0 +1,8 @@
+.preview-img img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+.item{
+    height: 500px;
+}
