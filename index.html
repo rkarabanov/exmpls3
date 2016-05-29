@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jumbotron.css">
     <![endif]-->
 </head>
 
@@ -20,12 +21,12 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-5 col-sm-8 col-md-8">
             <h1>Phonecat!</h1>
             <p>Магазин телефонов.</p>
         </div>
-        <div class="col-xs-8 col-md-4">
-            <form>
+        <div class="col-xs-6  col-sm-4 col-md-4">
+            <form class="search">
                 <input type="text" class="form-control" placeholder="Поиск..." ng-model="search">
             </form>
         </div>
@@ -34,7 +35,7 @@
 <div class="container">
     <!-- Example row of columns -->
     <div class="row">
-        <div class="col-xs-6 col-md-4 item" ng-repeat="phone in phones | filter:search">
+        <div class="col-xs-8 col-sm-6 col-md-4 item" ng-repeat="phone in phones | filter:search">
             <div  class="preview-img">
                 <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}"/>
             </div>

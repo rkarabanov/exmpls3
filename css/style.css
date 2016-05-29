@@ -1,8 +1,15 @@
-.preview-img img{
+.preview-img img {
     height: 200px;
     width: 200px;
+    vertical-align: center;
+    text-align: center;
     position: relative;
 }
-.item{
+
+.item {
     height: 500px;
+}
+
+.search {
+    margin-top: 20px;
 }
