@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-8 	headline">
+            <a href="#/"> <h1>Phonecat! -  </h1>
+                <h3>Магазин телефонов</h3></a>
+
+        </div>
+        <div class="col-xs-8  col-sm-4 col-md-4">
+            <form class="search">
+                <input type="text" class="form-control" placeholder="Поиск..." ng-model="query">
+            </form>
+        </div>
+    </div>
+</div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-xs-8 col-sm-6 col-md-4 item" ng-repeat="phone in phones | filter:query">
+                    <div class="item-inside">
+                        <div  class="preview-img">
+                            <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}"/>
+                        </div>
+                        <h2>{{phone.name}}</h2>
+                        <p>{{phone.snippet}}</p>
+                        <p><a class="btn btn-default" href="#/phones/{{phone.id}}" role="button">Подробнее... &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+        </div> <!-- /container -->

@@ -5,11 +5,20 @@
     text-align: center;
     position: relative;
 }
+.item-inside{
+
+    margin-top: 10px;
+}
 
 .item {
     height: 500px;
+    border: 1px solid steelblue;
 }
 
 .search {
     margin-top: 20px;
+}
+footer{
+    margin:10px;
+    text-align: right;
 }

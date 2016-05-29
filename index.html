@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>PhoneApp</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -18,48 +18,21 @@
 </head>
 
 <body ng-controller="PhoneListCtrl">
+<ng-view></ng-view>
 
-<div class="container">
-    <div class="row">
-        <div class="col-xs-5 col-sm-8 col-md-8">
-            <h1>Phonecat!</h1>
-            <p>Магазин телефонов.</p>
-        </div>
-        <div class="col-xs-6  col-sm-4 col-md-4">
-            <form class="search">
-                <input type="text" class="form-control" placeholder="Поиск..." ng-model="search">
-            </form>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-xs-8 col-sm-6 col-md-4 item" ng-repeat="phone in phones | filter:search">
-            <div  class="preview-img">
-                <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}"/>
-            </div>
-            <h2>{{phone.name}}</h2>
-            <p>{{phone.snippet}}</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-    </div>
-
-    <hr>
 
     <footer>
         <p>&copy; 2016 R-key, Inc.</p>
     </footer>
-</div> <!-- /container -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 <!--Angular.js Route-->
-<!--<script src="bower_components/angular-animate/angular-animate.js"></script>-->
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <script src="js/controllers.js"></script>
+<script src="js/app.js"></script>
 <script src="js/filters.js"></script>
 </body>
 </html>
