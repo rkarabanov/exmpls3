@@ -1,3 +1,5 @@
-/**
- * Created by rkara on 29.05.2016.
- */
+phonecatApp.filter('checkmark',function () {
+    return function (input) {
+        return input? '+':'-';
+    }
+})

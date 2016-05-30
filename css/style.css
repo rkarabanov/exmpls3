@@ -22,3 +22,6 @@ footer{
     margin:10px;
     text-align: right;
 }
+li{
+    list-style-type: none;
+}

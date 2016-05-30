@@ -1,3 +1,12 @@
-/**
- * Created by rkara on 29.05.2016.
- */
+phonecatApp
+.factory(
+    'Phone',[
+        "$resource", function ($resource) {
+            return $resource('phones/:phoneId.:format',{
+                phoneId: 'phones',
+                format:'json',
+                apiKey: 'someKey'
+            });
+        }
+    ]
+);
