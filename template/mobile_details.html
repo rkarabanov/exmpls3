@@ -24,42 +24,42 @@
         <hr>
         <ul class="specs list-unstyled">
             <li>
-                <span>Availability and Networks</span>
+                <span>{{'Availability and Networks' |samelcase}}</span>
                 <dl>
-                    <dt>Availability</dt>
+                    <dt>{{'Availability' |samelcase}}</dt>
                     <dd ng-repeat="availability in phone.availability">{{availability}}</dd>
                 </dl>
             </li>
             <li>
-                <span>Battery</span>
+                <span>{{'Battery' |samelcase}}</span>
                 <dl>
-                    <dt>Type</dt>
-                    <dd>{{phone.battery.type}}</dd>
-                    <dt>Talk Time</dt>
-                    <dd>{{phone.battery.talkTime}}</dd>
-                    <dt>Standby time (max)</dt>
-                    <dd>{{phone.battery.standbyTime}}</dd>
+                    <dt>{{'Type' |samelcase}}</dt>
+                    <dd>{{phone.battery.type|samelcase}}</dd>
+                    <dt>{{'Talk Time' |samelcase}}</dt>
+                    <dd>{{phone.battery.talkTime|samelcase}}</dd>
+                    <dt>{{'Standby time (max)' |samelcase}}</dt>
+                    <dd>{{phone.battery.standbyTime|samelcase}}</dd>
                 </dl>
             </li>
             <li>
-                <span>Storage and Memory</span>
+                <span>{{'Storage and Memory'|samelcase}}</span>
                 <dl>
                     <dt>RAM</dt>
-                    <dd>{{phone.storage.ram}}</dd>
-                    <dt>Internal Storage</dt>
-                    <dd>{{phone.storage.flash}}</dd>
+                    <dd>{{phone.storage.ram|samelcase}}</dd>
+                    <dt>{{'Internal Storage' |samelcase}}</dt>
+                    <dd>{{phone.storage.flash|samelcase}}</dd>
                 </dl>
             </li>
             <li>
-                <span>Connectivity</span>
+                <span>{{'Connectivity'|samelcase}}</span>
                 <dl>
-                    <dt>Network Support</dt>
+                    <dt>{{'Network Support' |samelcase}}</dt>
                     <dd>{{phone.connectivity.cell}}</dd>
                     <dt>WiFi</dt>
-                    <dd>{{phone.connectivity.wifi}}</dd>
-                    <dt>Bluetooth</dt>
-                    <dd>{{phone.connectivity.bluetooth}}</dd>
-                    <dt>Infrared</dt>
+                    <dd>{{phone.connectivity.wifi|samelcase}}</dd>
+                    <dt>{{'Bluetooth' |samelcase}}</dt>
+                    <dd>{{phone.connectivity.bluetooth|samelcase}}</dd>
+                    <dt>{{'Infrared' |samelcase}}</dt>
                     <dd>{{phone.connectivity.infrared|checkmark}}</dd>
                     <dt>GPS</dt>
                     <dd>{{phone.connectivity.gps|checkmark}}</dd>
@@ -69,57 +69,57 @@
                 <span>Android</span>
                 <dl>
                     <dt>OS Version</dt>
-                    <dd>{{phone.android.os}}</dd>
+                    <dd>{{phone.android.os|samelcase}}</dd>
                     <dt>UI</dt>
-                    <dd>{{phone.android.ui}}</dd>
+                    <dd>{{phone.android.ui|samelcase}}</dd>
                 </dl>
             </li>
             <li>
-                <span>Size and Weight</span>
+                <span>{{'Size and Weight' |samelcase}}</span>
                 <dl>
-                    <dt>Dimensions</dt>
+                    <dt>{{'Dimensions' |samelcase}}</dt>
                     <dd ng-repeat="dim in phone.sizeAndWeight.dimensions">{{dim}}</dd>
-                    <dt>Weight</dt>
+                    <dt>{{'Weight' |samelcase}}</dt>
                     <dd>{{phone.sizeAndWeight.weight}}</dd>
                 </dl>
             </li>
             <li>
-                <span>Display</span>
+                <span>{{'Display' |samelcase}}</span>
                 <dl>
-                    <dt>Screen size</dt>
+                    <dt>{{'Screen size' |samelcase}}</dt>
                     <dd>{{phone.display.screenSize}}</dd>
-                    <dt>Screen resolution</dt>
+                    <dt>{{'Screen resolution' |samelcase}}</dt>
                     <dd>{{phone.display.screenResolution}}</dd>
-                    <dt>Touch screen</dt>
+                    <dt>{{'Touch screen' |samelcase}}</dt>
                     <dd>{{phone.display.touchScreen|checkmark}}</dd>
                 </dl>
             </li>
             <li>
-                <span>Hardware</span>
+                <span>{{'Hardware' |samelcase}}</span>
                 <dl>
                     <dt>CPU</dt>
                     <dd>{{phone.hardware.cpu}}</dd>
                     <dt>USB</dt>
                     <dd>{{phone.hardware.usb}}</dd>
-                    <dt>Audio / headphone jack</dt>
+                    <dt>{{'Audio / headphone jack' |samelcase}}</dt>
                     <dd>{{phone.hardware.audioJack}}</dd>
-                    <dt>FM Radio</dt>
+                    <dt>{{'FM Radio' |samelcase}}</dt>
                     <dd>{{phone.hardware.fmRadio|checkmark}}</dd>
-                    <dt>Accelerometer</dt>
+                    <dt>{{'Accelerometer' |samelcase}}</dt>
                     <dd>{{phone.hardware.accelerometer|checkmark}}</dd>
                 </dl>
             </li>
             <li>
-                <span>Camera</span>
+                <span>{{'Camera' |samelcase}}</span>
                 <dl>
-                    <dt>Primary</dt>
+                    <dt>{{'Primary' |samelcase}}</dt>
                     <dd>{{phone.camera.primary}}</dd>
-                    <dt>Features</dt>
-                    <dd>{{phone.camera.features.join(', ')}}</dd>
+                    <dt>{{ 'Features' |samelcase}}</dt>
+                    <dd>{{phone.camera.features.join(', ')|samelcase}}</dd>
                 </dl>
             </li>
             <li>
-                <span>Additional Features</span>
+                <span>{{'Additional Features' |samelcase}}</span>
                 <dd>{{phone.additionalFeatures}}</dd>
             </li>
         </ul>
