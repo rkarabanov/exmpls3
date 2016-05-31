@@ -1,9 +1,9 @@
 'use strict';
-phonecatApp.service('PhoneDetailsCtrl', function () {
-    this.getPhones();
-});
+phonecatApp.service('PhoneDetailsService', ['$http', function ($http) {
+    return {getPhones: getPhones};
 
-function getPhones($http, $routeParams) {
-    var url = 'phones/' + $routeParams.phoneId + '.json';
-    return $http.get(url);
-}
+    function getPhones(phoneId) {
+        var url = 'phones/' + phoneId + '.json';
+        return $http.get(url);
+    }
+}]);

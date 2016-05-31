@@ -7,10 +7,10 @@ phonecatApp.controller('PhoneListCtrl',['$scope','$http', '$location', 'Phone',
 }]);
 
 phonecatApp.controller('PhoneDetailsCtrl',
-    ['$scope', '$http', '$location', '$routeParams',
-        function ($scope, $http, $location, $routeParams) {
+    ['$scope', '$http', '$location', '$routeParams','PhoneDetailsService',
+        function ($scope, $http, $location, $routeParams,PhoneDetailsService) {
             $scope.phoneId = $routeParams.phoneId;
-            getPhones($http, $routeParams).success(function (data) {
+            PhoneDetailsService.getPhones($routeParams.phoneId).success(function (data) {
                 $scope.phone  = data;
                 $scope.mainImgUrl = data.images[0];
             });
