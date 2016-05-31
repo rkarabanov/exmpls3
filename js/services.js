@@ -1,4 +1,9 @@
 'use strict';
-function getPhones(url,$http) {
-   return $http.get(url);
+phonecatApp.service('PhoneDetailsCtrl', function () {
+    this.getPhones();
+});
+
+function getPhones($http, $routeParams) {
+    var url = 'phones/' + $routeParams.phoneId + '.json';
+    return $http.get(url);
 }
