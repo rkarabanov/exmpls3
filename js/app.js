@@ -1,4 +1,7 @@
 'use strict';
+
+var phonecatApp=angular.module('phonecatApp',['ngRoute','ngResource']);
+
 phonecatApp
     .config(['$routeProvider','$locationProvider', function ($routeProvide,$locationProvide) {
     $routeProvide
